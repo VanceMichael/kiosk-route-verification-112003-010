@@ -8,7 +8,9 @@
       "stairs",
       "step-free"
     ],
-    "round": 1
+    "round": 1,
+    "from": "09:50",
+    "until": "11:00"
   },
   {
     "route": [
@@ -18,7 +20,9 @@
     "groups": [
       "stairs"
     ],
-    "round": 1
+    "round": 1,
+    "from": "09:50",
+    "until": "11:00"
   },
   {
     "route": [
@@ -29,7 +33,9 @@
       "stairs",
       "step-free"
     ],
-    "round": 1
+    "round": 1,
+    "from": "09:50",
+    "until": "11:00"
   },
   {
     "route": [
@@ -39,7 +45,9 @@
     "groups": [
       "stairs"
     ],
-    "round": 2
+    "round": 2,
+    "from": "09:50",
+    "until": "10:30"
   },
   {
     "route": [
@@ -49,7 +57,9 @@
     "groups": [
       "stairs"
     ],
-    "round": 1
+    "round": 1,
+    "from": "09:50",
+    "until": "11:00"
   },
   {
     "route": [
@@ -59,7 +69,9 @@
     "groups": [
       "step-free"
     ],
-    "round": 1
+    "round": 1,
+    "from": "09:50",
+    "until": "11:00"
   },
   {
     "route": [
@@ -69,7 +81,9 @@
     "groups": [
       "step-free"
     ],
-    "round": 1
+    "round": 1,
+    "from": "09:50",
+    "until": "11:00"
   },
   {
     "route": [
@@ -80,6 +94,72 @@
       "stairs",
       "step-free"
     ],
-    "round": 1
+    "round": 1,
+    "from": "09:50",
+    "until": "11:00"
+  },
+  {
+    "route": [
+      "E1",
+      "M"
+    ],
+    "groups": [
+      "stairs",
+      "step-free"
+    ],
+    "round": 3,
+    "from": "10:15",
+    "until": "11:00"
+  },
+  {
+    "route": [
+      "M",
+      "H3"
+    ],
+    "groups": [
+      "stairs",
+      "step-free"
+    ],
+    "round": 3,
+    "from": "10:20",
+    "until": "11:00"
+  },
+  {
+    "route": [
+      "M",
+      "OUT"
+    ],
+    "groups": [
+      "stairs",
+      "step-free"
+    ],
+    "round": 3,
+    "from": "10:27",
+    "until": "11:00"
+  },
+  {
+    "route": [
+      "OUT",
+      "ANNEX"
+    ],
+    "groups": [
+      "stairs",
+      "step-free"
+    ],
+    "round": 3,
+    "from": "10:35",
+    "until": "11:00"
+  },
+  {
+    "route": [
+      "ANNEX",
+      "OUT"
+    ],
+    "groups": [
+      "stairs"
+    ],
+    "round": 3,
+    "from": "10:00",
+    "until": "11:00"
   }
 ]

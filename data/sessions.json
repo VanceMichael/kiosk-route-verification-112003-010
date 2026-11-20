@@ -1,0 +1,32 @@
+[
+  {
+    "terminal": "K1",
+    "from": 1,
+    "until": 2,
+    "release": "1"
+  },
+  {
+    "terminal": "K1",
+    "from": 2,
+    "until": 3,
+    "release": "2"
+  },
+  {
+    "terminal": "K1",
+    "from": 3,
+    "until": 5,
+    "release": "3"
+  },
+  {
+    "terminal": "K2",
+    "from": 1,
+    "until": 3,
+    "release": "1"
+  },
+  {
+    "terminal": "K2",
+    "from": 3,
+    "until": 5,
+    "release": "3"
+  }
+]

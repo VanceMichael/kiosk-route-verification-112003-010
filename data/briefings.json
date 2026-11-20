@@ -12,7 +12,12 @@
       "H3"
     ],
     "event": "read",
-    "round": 1
+    "round": 1,
+    "team": "服务甲",
+    "service": [
+      "10:00",
+      "10:45"
+    ]
   },
   {
     "ref": "RM2",
@@ -27,11 +32,31 @@
       "H3"
     ],
     "event": "read",
-    "round": 1
+    "round": 1,
+    "team": "服务丙",
+    "service": [
+      "10:10",
+      "10:35"
+    ]
   },
   {
-    "ref": "RM1",
-    "event": "stop_read",
-    "round": 3
+    "ref": "RM3",
+    "assignment": "PUB1",
+    "activity": "W22",
+    "mode": "keyboard",
+    "group": "step-free",
+    "route": "A",
+    "points": [
+      "E1",
+      "X",
+      "H3"
+    ],
+    "event": "read",
+    "round": 1,
+    "team": "馆外乙",
+    "service": [
+      "10:00",
+      "10:45"
+    ]
   }
 ]

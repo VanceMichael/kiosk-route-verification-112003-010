@@ -91,7 +91,9 @@ class KioskSourceTest(unittest.TestCase):
                 self.assertEqual(page.get_by_role("listitem").all_text_contents(), ["E1", "M", "OUT", "ANNEX"])
                 page.get_by_role("link", name="现场通行").click()
                 table = page.get_by_role("table", name="有向通行表")
-                self.assertIn("10:35", table.get_by_role("row").filter(has_text="OUT ANNEX").inner_text())
+                row = table.get_by_role("row").filter(has=page.get_by_role("cell", name="OUT", exact=True))
+                row = row.filter(has=page.get_by_role("cell", name="10:35", exact=True))
+                self.assertIn("ANNEX", row.inner_text())
 
     def test_stop_notice_targets_one_recipient_until_they_acknowledge(self):
         with sync_playwright() as playwright, playwright.chromium.launch() as browser:

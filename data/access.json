@@ -1,0 +1,85 @@
+[
+  {
+    "route": [
+      "E1",
+      "X"
+    ],
+    "groups": [
+      "stairs",
+      "step-free"
+    ],
+    "round": 1
+  },
+  {
+    "route": [
+      "E1",
+      "Y"
+    ],
+    "groups": [
+      "stairs"
+    ],
+    "round": 1
+  },
+  {
+    "route": [
+      "X",
+      "H3"
+    ],
+    "groups": [
+      "stairs",
+      "step-free"
+    ],
+    "round": 1
+  },
+  {
+    "route": [
+      "X",
+      "H3"
+    ],
+    "groups": [
+      "stairs"
+    ],
+    "round": 2
+  },
+  {
+    "route": [
+      "Y",
+      "H3"
+    ],
+    "groups": [
+      "stairs"
+    ],
+    "round": 1
+  },
+  {
+    "route": [
+      "E2",
+      "Z"
+    ],
+    "groups": [
+      "step-free"
+    ],
+    "round": 1
+  },
+  {
+    "route": [
+      "Z",
+      "H3"
+    ],
+    "groups": [
+      "step-free"
+    ],
+    "round": 1
+  },
+  {
+    "route": [
+      "X",
+      "H4"
+    ],
+    "groups": [
+      "stairs",
+      "step-free"
+    ],
+    "round": 1
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "ref": "RM1",
+    "assignment": "PUB1",
+    "activity": "W22",
+    "mode": "keyboard",
+    "group": "step-free",
+    "route": "A",
+    "points": [
+      "E1",
+      "X",
+      "H3"
+    ],
+    "event": "read",
+    "round": 1
+  },
+  {
+    "ref": "RM2",
+    "assignment": "PUB2",
+    "activity": "W22",
+    "mode": "keyboard",
+    "group": "step-free",
+    "route": "A",
+    "points": [
+      "E2",
+      "Z",
+      "H3"
+    ],
+    "event": "read",
+    "round": 1
+  },
+  {
+    "ref": "RM1",
+    "event": "stop_read",
+    "round": 3
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "id": "PUB1",
+    "scope": [
+      "K1",
+      "E1",
+      "zh"
+    ],
+    "modes": [
+      "keyboard",
+      "touch"
+    ],
+    "groups": [
+      "stairs",
+      "step-free"
+    ],
+    "activities": [
+      "W22",
+      "W26"
+    ]
+  },
+  {
+    "id": "PUB2",
+    "scope": [
+      "K2",
+      "E2",
+      "en"
+    ],
+    "modes": [
+      "keyboard"
+    ],
+    "groups": [
+      "step-free"
+    ],
+    "activities": [
+      "W22"
+    ]
+  }
+]

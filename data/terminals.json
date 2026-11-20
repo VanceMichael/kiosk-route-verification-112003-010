@@ -1,0 +1,266 @@
+[
+  {
+    "scope": [
+      "K1",
+      "E1",
+      "zh",
+      "1"
+    ],
+    "version": "V18",
+    "pages": {
+      "home": {
+        "title": "活动索引",
+        "links": [
+          [
+            "floor1",
+            "一层展厅",
+            "keyboard"
+          ],
+          [
+            "floor2",
+            "二层展厅",
+            "pointer"
+          ]
+        ]
+      },
+      "floor1": {
+        "title": "一层展厅",
+        "links": [
+          [
+            "paper",
+            "拓印",
+            "keyboard"
+          ],
+          [
+            "shadow",
+            "皮影",
+            "keyboard"
+          ]
+        ]
+      },
+      "floor2": {
+        "title": "二层展厅",
+        "links": [
+          [
+            "side",
+            "拓印侧路",
+            "keyboard"
+          ]
+        ]
+      },
+      "paper": {
+        "title": "工坊指引",
+        "guides": [
+          {
+            "activity": "W22",
+            "route": "A",
+            "state": "open",
+            "points": [
+              "E1",
+              "X",
+              "H3"
+            ]
+          }
+        ]
+      },
+      "side": {
+        "title": "工坊指引",
+        "guides": [
+          {
+            "activity": "W22",
+            "route": "B",
+            "state": "open",
+            "points": [
+              "E1",
+              "Y",
+              "H3"
+            ]
+          }
+        ]
+      },
+      "shadow": {
+        "title": "工坊指引",
+        "guides": [
+          {
+            "activity": "W26",
+            "route": "C",
+            "state": "open",
+            "points": [
+              "E1",
+              "X",
+              "H4"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "scope": [
+      "K1",
+      "E1",
+      "zh",
+      "2"
+    ],
+    "version": "V19",
+    "pages": {
+      "home": {
+        "title": "活动索引",
+        "links": [
+          [
+            "floor1",
+            "一层展厅",
+            "keyboard"
+          ],
+          [
+            "floor2",
+            "二层展厅",
+            "pointer"
+          ],
+          [
+            "floor3",
+            "三层展厅",
+            "keyboard"
+          ]
+        ]
+      },
+      "floor1": {
+        "title": "一层展厅",
+        "links": [
+          [
+            "paper",
+            "拓印",
+            "keyboard"
+          ],
+          [
+            "shadow",
+            "皮影",
+            "keyboard"
+          ]
+        ]
+      },
+      "floor2": {
+        "title": "二层展厅",
+        "links": [
+          [
+            "side",
+            "拓印侧路",
+            "keyboard"
+          ]
+        ]
+      },
+      "paper": {
+        "title": "工坊指引",
+        "guides": [
+          {
+            "activity": "W22",
+            "route": "A",
+            "state": "open",
+            "points": [
+              "E1",
+              "X",
+              "H3"
+            ]
+          }
+        ]
+      },
+      "side": {
+        "title": "工坊指引",
+        "guides": [
+          {
+            "activity": "W22",
+            "route": "B",
+            "state": "open",
+            "points": [
+              "E1",
+              "Y",
+              "H3"
+            ]
+          }
+        ]
+      },
+      "shadow": {
+        "title": "工坊指引",
+        "guides": [
+          {
+            "activity": "W26",
+            "route": "C",
+            "state": "cancelled"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "scope": [
+      "K2",
+      "E2",
+      "en",
+      "1"
+    ],
+    "version": "V42",
+    "pages": {
+      "home": {
+        "title": "Workshop directory",
+        "links": [
+          [
+            "paper",
+            "Print workshop",
+            "keyboard"
+          ]
+        ]
+      },
+      "paper": {
+        "title": "Directions",
+        "guides": [
+          {
+            "activity": "W22",
+            "route": "A",
+            "state": "open",
+            "points": [
+              "E2",
+              "Z",
+              "H3"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "scope": [
+      "K2",
+      "E2",
+      "en",
+      "2"
+    ],
+    "version": "V42",
+    "pages": {
+      "home": {
+        "title": "Workshop directory",
+        "links": [
+          [
+            "paper",
+            "Print workshop",
+            "keyboard"
+          ]
+        ]
+      },
+      "paper": {
+        "title": "Directions",
+        "guides": [
+          {
+            "activity": "W22",
+            "route": "A",
+            "state": "open",
+            "points": [
+              "E2",
+              "Z",
+              "H3"
+            ]
+          }
+        ]
+      }
+    }
+  }
+]

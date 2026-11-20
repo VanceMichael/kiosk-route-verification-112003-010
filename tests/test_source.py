@@ -76,7 +76,8 @@ class KioskSourceTest(unittest.TestCase):
                 page = self.new_page(touch)
                 self.advance(page, 3)
                 self.connect(page, mode="touch")
-                page.get_by_role("button", name="二层展厅").tap()
+                with page.expect_navigation(wait_until="domcontentloaded"):
+                    page.get_by_role("button", name="二层展厅").tap()
                 self.assertTrue(page.get_by_role("heading", name="W26 C").is_visible())
                 self.assertTrue(page.get_by_text("cancelled", exact=True).is_visible())
                 page.get_by_role("button", name="结束检查").click()

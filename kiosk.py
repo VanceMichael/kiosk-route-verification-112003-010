@@ -30,7 +30,7 @@ def create_source(port=0, root=ROOT):
             body = f"""<!doctype html><html lang="zh"><meta charset="utf-8"><title>{title}</title>
             <style>body{{font:16px system-ui;max-width:64rem;margin:2rem auto;padding:0 1rem}}
             a,button,select{{display:inline-block;margin:.4rem;padding:.3rem}}[role=button]{{cursor:pointer;color:#286154}}
-            :focus-visible{{outline:3px solid #bd7400}}td,th{{padding:.3rem;text-align:left}}</style>
+            [hidden]{{display:none !important}}:focus-visible{{outline:3px solid #bd7400}}td,th{{padding:.3rem;text-align:left}}</style>
             <nav><a href="/">终端连接</a><a href="/venue">现场通行</a><a href="/notice">志愿者公告台</a>
             <a href="/publish-plan">班前发布单</a><a href="/ops">现场演练轮次</a></nav>
             <main><h1>{title}</h1><p>当前轮次 {current}</p>{content}</main></html>""".encode()

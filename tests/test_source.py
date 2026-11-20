@@ -37,8 +37,8 @@ class KioskSourceTest(unittest.TestCase):
     def focus_and_enter(self, page, title):
         for _ in range(25):
             if page.locator(":focus").count() and page.locator(":focus").inner_text() == title:
-                page.keyboard.press("Enter")
-                page.wait_for_load_state()
+                with page.expect_navigation(wait_until="domcontentloaded"):
+                    page.keyboard.press("Enter")
                 return
             page.keyboard.press("Tab")
         self.fail(f"键盘焦点不能到达 {title}")

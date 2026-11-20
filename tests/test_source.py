@@ -109,3 +109,13 @@ class KioskSourceTest(unittest.TestCase):
                 self.assertTrue(page.get_by_text("通知回条 N-RM1 停发已读", exact=True).is_visible())
                 row = page.get_by_role("row").filter(has_text="RM3")
                 self.assertNotIn("停发", row.inner_text())
+                values = {
+                    "新交接号":"REPLACE1", "发布单":"PUB1", "活动":"W22", "方式":"keyboard",
+                    "通行组":"step-free", "路线":"D", "检查点序列":"E1,M,H3", "适用起始":"10:20",
+                    "适用结束":"10:45", "领用服务点":"服务甲",
+                }
+                for label, val in values.items():
+                    page.get_by_label(label, exact=True).fill(val)
+                page.get_by_role("button", name="发布新指引").click()
+                self.assertIn("10:20-10:45", page.get_by_role("row").filter(has_text="REPLACE1").inner_text())
+                self.assertIn("停发已读", page.get_by_role("row").filter(has_text="RM1").inner_text())

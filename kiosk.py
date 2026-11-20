@@ -65,8 +65,8 @@ def create_source(port=0, root=ROOT):
                 ("lang", "语言", ("zh", "en")),
                 ("mode", "操作方式", ("keyboard", "touch")),
             )
-            fields = "".join(f'<label>{label}<select name="{name}">' + "".join(f'<option>{x}</option>' for x in options)
-                             + "</select></label>" for name, label, options in selectors)
+            fields = "".join(f'<label for="{name}">{label}</label><select id="{name}" name="{name}">' + "".join(f'<option>{x}</option>' for x in options)
+                             + "</select>" for name, label, options in selectors)
             windows = [([row[k] for k in ("terminal", "from", "until")]) for row in schedule]
             body = self.table("检查时窗", ("终端", "起始轮", "结束轮"), windows)
             self.visual("工坊导览连接", body + f'<form method="post" action="/connect">{fields}<button>进入导览</button></form>')

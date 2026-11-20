@@ -35,8 +35,9 @@ class KioskSourceTest(unittest.TestCase):
         page.get_by_role("button", name="进入导览").click()
 
     def focus_and_enter(self, page, title):
+        control = page.get_by_role("button", name=title, exact=True)
         for _ in range(25):
-            if page.locator(":focus").count() and page.locator(":focus").inner_text() == title:
+            if control.and_(page.locator(":focus")).count():
                 with page.expect_navigation(wait_until="domcontentloaded"):
                     page.keyboard.press("Enter")
                 return
@@ -59,7 +60,7 @@ class KioskSourceTest(unittest.TestCase):
                 self.assertEqual(page.url, address)
                 self.assertTrue(page.get_by_role("dialog").is_visible())
                 page.keyboard.press("Enter")
-                self.assertFalse(page.get_by_role("dialog").is_visible())
+                page.get_by_role("dialog").wait_for(state="hidden")
                 self.focus_and_enter(page, "拓印")
                 self.assertEqual(self.context_value(page,"本页安装版"), "V18")
                 self.assertTrue(page.get_by_role("heading", name="W22 A").is_visible())
@@ -85,6 +86,7 @@ class KioskSourceTest(unittest.TestCase):
                 self.connect(page)
                 self.focus_and_enter(page, "临时分流")
                 page.keyboard.press("Enter")
+                page.get_by_role("dialog").wait_for(state="hidden")
                 self.focus_and_enter(page, "无台阶通行")
                 self.assertTrue(page.get_by_role("heading", name="W22 D").is_visible())
                 self.focus_and_enter(page, "馆外工坊")
